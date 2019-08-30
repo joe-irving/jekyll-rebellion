@@ -1,0 +1,26 @@
+{% comment %}
+
+    blok {
+        text: string,
+        show_join: boolean,
+        show_donate: boolean
+    }
+
+{% endcomment %}
+{{blok._editable}}
+<div class="Rebellion-Section Rebellion-PullQuote">
+    <div class="Rebellion-Wrapper-Wide">
+        <h1>{{blok.text}}</h1>
+        {% if blok.show_join or blok.show_donate %}
+            <div class="Rebellion-Flex-Line">
+                {% if blok.show_join %}
+                    <a href="{{ site.join }}"><span class="Rebellion-Button">Join Us</span></a>
+                {% endif %}
+                {% if blok.show_donate %}
+                    <a href="{{ site.donate }}"><span class="Rebellion-Button">Donate</span></a>
+                {% endif %}
+            </div>
+        {% endif %}
+    </div>
+</div>
+    

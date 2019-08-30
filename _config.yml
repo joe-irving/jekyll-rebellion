@@ -1,0 +1,42 @@
+title: Rebellion
+email: davidgundry@gmail.com
+description: >-
+  Rebellion is an Extinction Rebellion theme for Jekyll. It uses bold blocks of colour
+  while still being comfortable to read, for conveying an important message.
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
+theme: jekyll-rebellion
+
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
+
+sass:
+  sass_dir: _sass
+
+permalink: /:title/
+
+# Rebellion Config
+#logo: /assets/logo-black.svg
+#logo_square: /assets/logo-square.svg
+#logo_light: /assets/logo-white.svg
+facebook: \#
+twitter: \#
+instagram: \#
+copyright_notice: The <a href="https://www.extinctionsymbol.info">Extinction Symbol</a> is used with permission. Other content <a href="/copyright/">may be copyright</a>
+donate: /donate/
+join_us: /join-us/
+# $xr-green, $xr-yellow, $xr-light-blue, $xr-pink, $xr-purple, $xr-dark-blue $xr-light-blue, xr-light-green, $xr-pastel-yellow
+brand_color: $xr-pink
+accent_color: $xr-dark-blue
+invert_brand_text: false
+invert_accent_text: true
+theme_tiny: 250
+theme_small: 425
+theme_medium: 850
+theme_large: 1300
+#main_nav_exclude_layouts: # Array of layout names to exclude from the main nav.
+#header_pages: Array of pages (filepaths) to include in header nav

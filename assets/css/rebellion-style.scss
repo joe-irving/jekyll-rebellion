@@ -1,0 +1,50 @@
+---
+---
+
+
+$xr-green:      #21a73d !default;
+$xr-yellow:      #ffc113 !default;
+$xr-light-blue:      #71d0f1 !default;
+$xr-pink:      #ed9bc4 !default;
+$xr-purple:      #986297 !default;
+$xr-dark-blue:      #3f61b6 !default;
+$xr-light-green:      #a1da68 !default;
+$xr-pastel-yellow:      #f3f35b !default;
+
+// Other colours
+$black-color:       #111 !default;
+$white-color:       #fdfdfd !default;
+$shadow-color:     #222;
+$grey-color:       #828282 !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark:  darken($grey-color, 25%) !default;
+
+
+$text-color:       $black-color !default;
+
+
+{% if site.invert_brand_text %}
+    $brand-text-color: $white-color !default;
+    $brand-text-color-invert: $black-color !default;
+{% else %}
+    $brand-text-color: $black-color !default;
+    $brand-text-color-invert: $white-color !default;
+{% endif %}
+
+{% if site.invert_accent_text %}
+    $accent-text-color: $white-color !default;
+{% else %}
+    $accent-text-color: $black-color !default;
+{% endif %}
+$text-color-light: lighten($text-color, 18%);
+$background-color: $white-color !default;
+$brand-color:       {{ site.brand_color | default: "$xr-green" }} !default;
+$accent-color:      {{ site.accent_color | default: "$xr-yellow" }} !default;
+$accent-color-dark: darken($accent-color, 15%) !default;
+
+$on-tiny:          {{ site.theme_tiny | default: 250 }}px !default;
+$on-small:         {{ site.theme_small | default: 425 }}px !default;
+$on-medium:        {{ site.theme_medium | default: 850 }}px !default;
+$on-large:         {{ site.theme_large | default: 1300 }}px !default;
+
+@import "rebellion";

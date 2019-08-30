@@ -1,0 +1,33 @@
+{% comment %}
+
+    blok {
+        day: string,
+        month: string,
+        summary: string,
+        time: string,
+        location: string,
+        image: string
+        url: string
+    }
+
+{% endcomment %}
+{{blok._editable}}
+<div class="Rebellion-Event-Item">
+    <div class="top">
+        <div class="date">
+            <span class="day-number">{{ blok.day }}</span>
+            <span class="month">{{ blok.month }}</span>
+        </div>
+        <div class="description">
+            <h3>{{ blok.summary }}</h3>
+            <time>{{ blok.time }}</time>
+            <div class="bottom-line">
+                <p>{{ blok.location }}</p>
+                <a href="{{ blok.url }}" class="Rebellion-Button">Details</a>
+            </div>
+        </div>
+    </div>
+    {% if blok.image %}
+        <img src="{{ blok.image }}" />
+    {% endif %}
+</div>

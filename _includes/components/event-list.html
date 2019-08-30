@@ -1,0 +1,22 @@
+{% comment %}
+
+    blok {
+        events: [
+            { 
+                day: string,
+                month: string,
+                summary: string,
+                time: string,
+                location: string,
+                image: string,
+                component: "event-item"
+            }]
+    }
+
+{% endcomment %}
+{{blok._editable}}
+<div class="Rebellion-Event-List">
+    {% for blok in blok.body %}
+        {% include component.html blok=blok %}
+    {% endfor %}
+</div>

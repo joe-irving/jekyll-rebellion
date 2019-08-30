@@ -1,0 +1,16 @@
+{% comment %}
+
+    blok {
+        video_id: string
+    }
+
+{% endcomment %}
+{{ blok._editable }}
+<div class="Rebellion-Youtube-Video">
+    <iframe
+        src="https://www.youtube-nocookie.com/embed/{{ blok.video_id }}?rel=0;"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+</div>

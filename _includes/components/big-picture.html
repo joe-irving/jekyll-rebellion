@@ -1,0 +1,25 @@
+{% comment %}
+
+    blok {
+        image: string,
+        jump_target: string,
+        jump_text: string,
+        show_jump_button: boolean,
+        half_size: boolean
+    }
+
+{% endcomment %}
+{{blok._editable}}
+{% if blok.half_size %}
+<div class="Rebellion-Section Rebellion-Half-Picture" style="background-image: url('{{blok.image}}');">
+{% else %}
+<div class="Rebellion-Section Rebellion-Big-Picture" style="background-image: url('{{blok.image}}');">
+{% endif %}
+    {% if blok.show_jump_button %}
+    <div class="Rebellion-Near-Bottom">
+        <div class="Rebellion-Flex-Line">
+            <a href="#{{blok.jump_target}}"><span class="Rebellion-Button">{{blok.jump_text}}</span></a>
+        </div>
+    </div>
+    {% endif %}
+</div>
