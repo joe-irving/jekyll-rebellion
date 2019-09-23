@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-rebellion"
-  spec.version       = "0.1.0"
+  spec.version       = "0.2"
   spec.authors       = ["David Gundry"]
   spec.email         = ["david@davidgundry.co.uk"]
 
@@ -14,11 +14,9 @@ Gem::Specification.new do |spec|
     f.match(%r{^(_(includes|layouts|sass)/|assets/(?!demo)|(LICENSE|README)((\.(txt|md|markdown)|$)))}i)
   end
   
-
-  spec.add_runtime_dependency "jekyll", "~> 3.8"
+  spec.add_runtime_dependency "jekyll", "~> 4.0"
   spec.add_runtime_dependency "jekyll-feed", "~> 0.9"
   spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.1"
 
   spec.add_development_dependency "bundler", "~> 2.0.2"
-  spec.add_development_dependency "rake", "~> 12.0"
 end

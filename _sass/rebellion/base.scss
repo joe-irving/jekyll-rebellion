@@ -24,8 +24,6 @@ pre, code, blockquote, figure, table {
     margin: $spacing-unit*2 0;
     padding: 0;
 }
-h1 { text-align: center; }
-
 
 /**
  * Basic styling
@@ -39,7 +37,17 @@ body {
     flex-direction: column;
 }
 
- 
+h1 { 
+    text-align: center;
+    line-height: 1.1;
+    font-family: $header-font-stack;
+    margin: 1em 0 0.4em 0;
+}
+
+p {
+    margin: 1em 0;
+}
+
 img {
     max-width: 100%;
     vertical-align: middle;
@@ -137,9 +145,7 @@ ul {
         padding-right: 0.5em;
     }
 }
- 
-
- 
+  
 
 /**
 * Links
@@ -202,9 +208,7 @@ pre {
         padding-left: 0;
     }
 }
- 
 
- 
  
  /**
   * Tables
@@ -239,8 +243,6 @@ table {
     }
 }
 
-
-  
 /**
 * Clearfix
 */
@@ -250,68 +252,6 @@ table {
     clear: both;
 }
  
-.Rebellion-Wrapper-Wide{
-    max-width: -webkit-calc(#{$content-width-wide} - (#{$spacing-unit}));
-    max-width:         calc(#{$content-width-wide} - (#{$spacing-unit}));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    @extend %clearfix;
-
-}
-
-.Rebellion-Wrapper-Narrow{
-    max-width: -webkit-calc(#{$content-width-narrow} - (#{$spacing-unit}));
-    max-width:         calc(#{$content-width-narrow} - (#{$spacing-unit}));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    @extend %clearfix;
-}
-
-.Rebellion-Main {
-    display: flex;
-    flex: 1 0 auto;
-    flex-direction: column;
-    display: block; //Defaults to 'inline' in IE 11
-}
-
-
-.Rebellion-Button {
-    display: inline-block;
-    background-color: $accent-color;
-    color: $accent-text-color;
-    padding: 0.5em 1em;
-    border-radius: $rounding;
-    font-family: $header-font-stack;
-    transition: background-color 0.3s  ease-in-out;
-    font-weight: normal;
-    &:hover {
-        text-decoration: none; 
-        background-color: $accent-color-dark;
-    }
-    &:visited {
-        color: $accent-text-color;
-    }
-}
-
-
-.Rebellion-Post-Info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: stretch;
-    padding-top: $spacing-unit*4;
-    font-size: $small-font-size;
-
-    > .box {
-        background-color: $grey-color-light;
-        padding: 0 $spacing-unit*2;
-        flex-basis: 250px;
-    }
-}
 
 .invert-text {
     color: $background-color;

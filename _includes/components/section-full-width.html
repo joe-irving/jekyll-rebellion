@@ -1,8 +1,0 @@
-<div class="Rebellion-Section">
-    {% if blok.anchor %}
-        <a id="{{ blok.anchor }}"></a>
-    {% endif %}
-    {% for blok in blok.body %}
-        {% include component.html blok=blok %}
-    {% endfor %}
-</div>

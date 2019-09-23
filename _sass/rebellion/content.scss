@@ -1,0 +1,201 @@
+.Rebellion-Section {
+    padding: 50px 0;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    &:first-of-type {
+        padding-top: $action-bar-height-mobile + 50;
+
+        @media screen and (min-width: $on-small) {
+            padding-top: $action-bar-height + 50;
+        }
+    }
+}
+
+.Rebellion-Wrapper-Wide{
+    max-width: -webkit-calc(#{$content-width-wide} - (#{$spacing-unit}));
+    max-width:         calc(#{$content-width-wide} - (#{$spacing-unit}));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+    @extend %clearfix;
+}
+
+.Rebellion-Wrapper-Narrow{
+    max-width: -webkit-calc(#{$content-width-narrow} - (#{$spacing-unit}));
+    max-width:         calc(#{$content-width-narrow} - (#{$spacing-unit}));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+    @extend %clearfix;
+}
+
+.Rebellion-Main {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    display: block; //Defaults to 'inline' in IE 11
+}
+
+.Rebellion-Big-Picture {
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    padding: 0;
+}
+
+.Rebellion-Half-Picture {
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    padding: 0;
+}
+
+.Rebellion-Near-Bottom {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+}
+
+.Rebellion-Flex-Line {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.Rebellion-Button {
+    display: inline-block;
+    background-color: $accent-color;
+    color: $accent-text-color;
+    padding: 0.5em 1em;
+    border-radius: $rounding;
+    font-family: $header-font-stack;
+    transition: background-color 0.3s  ease-in-out;
+    font-weight: normal;
+    &:hover {
+        text-decoration: none; 
+        background-color: $accent-color-dark;
+    }
+    &:visited {
+        color: $accent-text-color;
+    }
+}
+
+.Rebellion-PullQuote {
+    background-color: $brand-color;
+    color: $brand-text-color;
+    font-family: $header-font-stack;
+    text-align: center;
+    padding: 130px 0 100px 0;
+
+    h1 {
+        text-align: left;
+        margin: 1em 0;
+    }
+}
+
+.Rebellion-Post-Info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: stretch;
+    padding-top: $spacing-unit*4;
+    font-size: $small-font-size;
+
+    > .box {
+        padding: 0 $spacing-unit*2;
+        flex: 0 1 300px;
+    }
+}
+
+.Rebellion-Blog-List{
+    li {
+        list-style-type: none;
+        counter-increment: list;
+        position: relative;
+        margin-left: 2.5em;
+    }
+
+    li:before {
+        font-weight: bold;
+        position: absolute;
+        left: -2.6em;
+        width: 2em;
+        text-align: right;
+        color: $text-color;
+        font-family: $header-font-stack;
+        font-size: 2em;
+    }
+}
+
+.Rebellion-Blog-Item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $background-color;
+    box-shadow: 0 5px 10px $shadow-color;
+    padding: $spacing-unit;
+    padding-bottom: $spacing-unit /2;
+    margin: $spacing-unit;
+    max-width: $content-width-wide;
+    width: 90%;
+
+    & > img {
+        margin: $spacing-unit 0 $spacing-unit/2 0;
+    }
+
+    .top {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+
+        .date {
+            flex-basis: 60px;
+            flex-grow: 0;
+            flex-shrink: 0;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-family: $header-font-stack;
+            padding-right: $spacing-unit;
+
+            .day-number {
+                font-size: $base-font-size * 2;
+                border-bottom: 4px solid $xr-green;
+                line-height: 1;
+            }
+
+            .month {
+                font-size: $small-font-size; //$base-font-size * 0.8;
+                color: $text-color-light;
+            }
+        }
+
+        .description {
+            line-height: 1;
+            width: 100%;
+            font-size: $small-font-size;
+
+            h3, h4 {
+                margin-top: 5px;
+            }
+
+            .bottom-line {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+            }
+        }
+    }
+}
+

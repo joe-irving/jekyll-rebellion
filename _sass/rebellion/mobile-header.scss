@@ -5,8 +5,12 @@
     flex-wrap: nowrap;
     justify-items: space-between;
     align-items: center;
-    min-height: $action-bar-height;
+    min-height: $action-bar-height-mobile;
     height: 100%;
+
+    @media screen and (min-width: $on-small) {
+        min-height: $action-bar-height;
+    }
 
     .nav-trigger { display: none; }
 
@@ -32,6 +36,7 @@
     }
     
     .menu-icon {
+        line-height: 0;
         width: 18px;
         height: 15px;
         position: relative;
@@ -88,8 +93,12 @@
         display: none;
         z-index: 2;
         position: fixed;
-        top: 14px;
+        top: 6px;
         right: 16px;
+
+        @media screen and (min-width: $on-small) {
+            top: 14px;
+        }
 
         .menu-icon {
             width: 18px;
@@ -131,7 +140,12 @@
 
             width: 100%;
             position: relative;
-            padding-top: $action-bar-height;
+            padding-top: $action-bar-height-mobile;
+
+            @media screen and (min-width: $on-small) {
+                padding-top: $action-bar-height;
+            }
+        
 
             display: flex;
             flex-direction: column;

@@ -6,7 +6,12 @@
     flex-wrap: nowrap;
     justify-items: space-between;
     align-items: center;
-    min-height: $action-bar-height;
+    min-height: $action-bar-height-mobile;
+
+    @media screen and (min-width: $on-small) {
+        min-height: $action-bar-height;
+    }
+    
     height: 100%;
 
     .Rebellion-Button {

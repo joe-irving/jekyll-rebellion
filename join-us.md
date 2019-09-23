@@ -1,60 +1,77 @@
 ---
-layout: home
+layout: page
 title: Join Us
 permalink: /join-us/
-
-top_image: /assets/demo/example-image3.jpg
-jump:
-  text: Can be defined in YAML frontmatter too
-  target: join
-
-demands:
-  title: An optional title for this section
-  show_title: true
-  boxes:
-    - title: Tell the Truth
-      text: This is an example box with some text in it
-      link: \#url,
-      button_text: Find our more
-    - title: Carbon Zero
-      text: These boxes can be used for making a few short bits of text pop out.
-      link: \#url,
-      button_text: Learn more
-    - title: Citizen's Assembly
-      text: You could use them for the XR demands, or more!
-      link: \#url,
-      button_text: More demands!
-    - title: Another One
-      text: You could create your own lists
-      link: \#url,
-      button_text: Whatever you like
-    - title: And even wrap them to the next line
-      text: Unless your screen is very wide
-      link: \#url,
-      button_text: It might be
-    - title: You can have loads
-      text: But there are only 8 colours
-      link: \#url,
-      button_text: Seems plenty?
-    - title: Don't worry
-      text: The colours will loop
-      hide_link: true
-      button_text: That's a lot
-    - title: Want to hide buttons?
-      text: You can do that too
-      hide_link: true
-
-order: 4
+top_image: /assets/demo/alternative-alternative-energy-blades-2310062.jpg #Photo by Matthew T Rader from Pexels
+order: 1
 ---
 
-# Heading 1
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse risus nunc, volutpat vitae tempor eget, rutrum quis urna. Aliquam consequat tincidunt sapien sed commodo. Maecenas diam turpis, pulvinar nec nibh blandit, cursus dictum dolor. Praesent id diam ut elit semper tincidunt sed vel tortor. Ut volutpat dui vel ex maximus, at bibendum mi aliquam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque consequat lectus a mauris imperdiet efficitur. Donec sodales, dolor at pretium posuere, elit tellus semper turpis, ut egestas ipsum lorem ac mi. Donec rutrum ullamcorper odio, ac bibendum odio. Duis aliquam at nisl nec sagittis. Vivamus placerat eleifend ex. Nunc nisi risus, scelerisque sit amet tempor sit amet, laoreet ac lorem. Aliquam ornare libero nec purus rhoncus condimentum.
+# Join Us
 
 ## Heading 2
-Ut dignissim porttitor nibh, ac laoreet nisi blandit a. Pellentesque gravida nisl non mauris mattis efficitur. Praesent cursus nunc ut congue commodo. Ut sem purus, pellentesque in diam sed, vulputate porta felis. Maecenas at congue ipsum, id ultrices lorem. Vestibulum quis congue orci. Nulla ac arcu libero. Suspendisse vulputate volutpat nunc, ut placerat purus cursus non. Pellentesque imperdiet faucibus convallis. Quisque consequat lectus id velit consectetur egestas. Proin eros lacus, lacinia vitae aliquam eget, finibus non libero.
 
-Curabitur blandit leo non sapien pulvinar gravida. Morbi lobortis vitae velit in venenatis. Nullam aliquam laoreet lorem. Nullam venenatis erat quis quam rutrum, tempus pulvinar tortor facilisis. Suspendisse dolor odio, interdum mollis risus elementum, tincidunt porta dui. Integer sed efficitur mi, sit amet interdum magna. Cras tincidunt luctus placerat. Praesent ac vehicula nisi. Suspendisse sagittis, odio vitae mollis pharetra, arcu tellus luctus ipsum, et molestie odio odio eu purus.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse risus nunc, volutpat vitae tempor eget, rutrum quis urna. Aliquam consequat tincidunt sapien sed commodo. Maecenas diam turpis, pulvinar nec nibh blandit, cursus dictum dolor. Praesent id diam ut elit semper tincidunt sed vel tortor. Ut volutpat dui vel ex maximus, at bibendum mi aliquam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
 
-Morbi blandit eleifend eros id porta. Cras elit enim, rutrum dapibus mauris a, ultricies dignissim purus. Praesent urna nulla, molestie vel arcu a, luctus ultricies quam. Maecenas mattis placerat tortor et maximus. Aliquam aliquam ex non pretium dapibus. Suspendisse pellentesque efficitur turpis a interdum. Morbi quis mauris id ante egestas dignissim placerat accumsan nulla. Nulla urna nisi, porta malesuada augue at, maximus ullamcorper lacus. Suspendisse augue magna, faucibus dapibus neque a, mattis semper nisi. Nam tristique ligula ut sodales rutrum. Etiam consequat facilisis erat vel interdum. Aenean quis lorem consectetur, aliquam tellus posuere, eleifend nulla. Morbi varius justo lacinia ligula imperdiet, quis viverra quam consectetur. Quisque nec faucibus urna, gravida condimentum dolor. Fusce at lorem porta, ultricies ante vitae, sodales libero.
+A list below
 
-Sed sit amet tempus lectus. Curabitur consequat dignissim ligula, a semper erat consectetur at. Donec auctor purus id felis imperdiet, at pharetra felis placerat. Etiam ac fermentum felis, eget vestibulum orci. Fusce tristique libero in leo laoreet ultricies. Nullam congue sed nibh non tempor. Vestibulum tempus imperdiet turpis. Pellentesque porta mauris velit, id pulvinar diam vulputate vitae. Aliquam tincidunt vitae arcu sed elementum. Ut euismod auctor risus, eget semper nunc gravida id. Nunc at lobortis nulla, sit amet dignissim nibh. Maecenas justo libero, vestibulum quis tristique non, eleifend id nibh. Curabitur maximus condimentum diam vel egestas. 
+* one
+* two
+* three
+
+
+### Heading 3
+
+Table | Header | Cells
+----- | ------ | -----
+abc   | 123    | 1
+defg  | 573    | 1
+hi    | 5      | 112870
+
+
+Pellentesque consequat lectus a mauris imperdiet efficitur. Donec sodales, dolor at pretium posuere, elit tellus semper turpis, ut egestas ipsum lorem ac mi. Donec rutrum [ullamcorper]() odio, ac bibendum odio. Duis aliquam at nisl nec sagittis. Vivamus placerat eleifend ex. Nunc nisi risus, scelerisque sit amet tempor sit amet, laoreet ac lorem. Aliquam ornare libero nec purus rhoncus condimentum.
+
+<figure>
+<img src="/assets/demo/image1.png" alt="An example graph"/>
+<figcaption>
+This is my caption
+</figcaption>
+</figure>
+
+
+#### Heading 4
+
+
+<table>
+<tr><th>Heading</th></tr>
+<tr><td>Row</td></tr>
+<tr><td>Row</td></tr>
+<caption>This is a table caption</caption>
+</table>
+
+Integer eleifend metus vitae pellentesque commodo. In rhoncus massa et nunc maximus, sed sagittis leo blandit. Duis non consequat sem, sed malesuada mi. Vestibulum lectus sapien, iaculis eget viverra ut, porta eget sem.
+
+Proin consequat lacus ultrices, viverra ligula vel, dictum nibh. Proin tincidunt semper libero nec elementum. Aenean placerat est nulla, ornare mattis diam viverra nec. Donec rhoncus porttitor elit a cursus. 
+
+    <some> code </that> is {{ in }} a block
+    Just in (case) we need it.
+
+>We can't save the world by playing by the rules, because the rules have to be changed. Everything needs to change - and it has to start today.
+Greta Thunberg
+
+<img src="/assets/demo/image2.png" alt="An example graph"/>
+
+# Heading 1
+
+Aenean pellentesque urna a neque rhoncus, id tempor mi malesuada. Maecenas porttitor tellus vel nisi sagittis, quis pharetra odio fringilla. Fusce vitae eros ac mi ullamcorper hendrerit. Morbi at dolor pellentesque, malesuada eros nec, facilisis nunc. Curabitur id dolor pharetra, convallis urna ac, efficitur enim. Vestibulum commodo efficitur dui eget placerat. Vivamus mollis arcu a quam efficitur, at aliquam tellus bibendum. Donec ultrices sem enim, eu euismod orci aliquet nec. Duis sodales a lorem vitae eleifend. 
+
+##### Heading 5
+
+1. A
+2. B
+3. C
+
+<img src="/assets/demo/image3.png" alt="An example graph"/>
+
+###### Heading 6
+
+The end.

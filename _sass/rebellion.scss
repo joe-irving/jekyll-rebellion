@@ -8,7 +8,6 @@
     font-display:swap
 }
 
-
 // Fonts
 $base-font-stack: "Crimson Text", serif !default;
 $base-font-size:   16pt !default;
@@ -17,7 +16,6 @@ $base-line-height: 1.5 !default;
 $header-font-stack: "FucXed","Helvetica Neue",Helvetica,Arial,sans-serif;
 $small-font-size:  $base-font-size * 0.875 !default;
 $smaller-font-size:  $base-font-size * 0.7 !default;
-
 
 $table-text-align: left !default;
 
@@ -32,6 +30,7 @@ $on-large:         1300px !default;
 
 $spacing-unit:     10px !default;
 $action-bar-height: 72px !default;
+$action-bar-height-mobile: 56px !default;
 $rounding: 5px;
 
 // Import partials.
@@ -39,6 +38,6 @@ $rounding: 5px;
   "rebellion/base",
   "rebellion/header",
   "rebellion/footer",
-  "rebellion/components"
+  "rebellion/content"
 ;
     

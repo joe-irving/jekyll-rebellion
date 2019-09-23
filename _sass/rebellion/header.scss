@@ -1,6 +1,9 @@
 
 .nav-hide {
-    top: -$action-bar-height;
+    top: -$action-bar-height-mobile;
+    @media screen and (min-width: $on-small) {
+        top: -$action-bar-height;
+    }
 }
 
 .nav-visible {
@@ -76,7 +79,13 @@
     }
 
     .site-title img {
-        max-height: $action-bar-height;
+        max-height: $action-bar-height-mobile;
+
+
+        @media screen and (min-width: $on-small) {
+            max-height: $action-bar-height;
+        }
+        
         box-sizing: border-box;
         padding: 10px 0;
     }
@@ -84,8 +93,13 @@
     .site-title .logo-square
     {
         display: none;
-        max-width: $action-bar-height;
-        max-height: $action-bar-height;
+        max-width: $action-bar-height-mobile;
+        max-height: $action-bar-height-mobile;
+
+        @media screen and (min-width: $on-small) {
+            max-width: $action-bar-height-mobile;
+            max-height: $action-bar-height;
+        }
     }
 
     @media screen and (max-width: 250px) {

@@ -5,7 +5,6 @@
     {% include mobile-header.html %}
     {% include desktop-header.html %}
 
-    
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
     {% if site.header_pages %}
         {% assign titles_size = 0 %}
