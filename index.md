@@ -41,8 +41,8 @@ TODO: Write usage instructions here.
  
 ## _config.yml values
 
-| Property | Example Value | Available Values 
-| ----- | ------------- | ---- |
+| Property | Example Value |
+| ----- | ------------- | 
 | logo | /assets/logo-black.svg |
 | logo_square | /assets/logo-square.svg |
 | logo_light | /assets/logo-white.svg |
@@ -52,16 +52,16 @@ TODO: Write usage instructions here.
 | copyright_notice | Add an additional copyright notice here. | 
 | donate | /donate/ | 
 | join_us | /join-us/ | 
-| brand_color | $xr-pink | $xr-green, $xr-yellow, $xr-light-blue, $xr-pink, $xr-purple, $xr-dark-blue $xr-light-blue, xr-light-green, $xr-pastel-yellow  |
-| accent_color | $xr-dark-blue | $xr-green, $xr-yellow, $xr-light-blue, $xr-pink, $xr-purple, $xr-dark-blue $xr-light-blue, xr-light-green, $xr-pastel-yellow  |
+| brand_color | one of: $xr-green, $xr-yellow, $xr-light-blue, $xr-pink, $xr-purple, $xr-dark-blue $xr-light-blue, xr-light-green, $xr-pastel-yellow  |
+| accent_color | one of: $xr-green, $xr-yellow, $xr-light-blue, $xr-pink, $xr-purple, $xr-dark-blue $xr-light-blue, xr-light-green, $xr-pastel-yellow  |
 | invert_brand_text | false | 
 | invert_accent_text | true | 
 | theme_tiny | 250 | 
 | theme_small | 425 | 
 | theme_medium | 570 | 
 | theme_large | 770 | 
-| main_nav_exclude_layouts |  | Array of layout names to exclude from the main nav
-| header_pages |  | Array of pages (filepaths) to include in header nav
+| main_nav_exclude_layouts | Array of layout names to exclude from the main nav |
+| header_pages | Array of pages (filepaths) to include in header nav |
 
 
 # Contributing
