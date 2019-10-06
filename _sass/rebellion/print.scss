@@ -1,0 +1,21 @@
+@media print
+{
+    body {
+        font-size: 12pt;
+    }
+    .Rebellion-Header, .Rebellion-Footer, .Rebellion-Big-Picture, .Rebellion-Half-Picture{
+        display: none;
+    }
+    .Rebellion-Wrapper-Wide, .Rebellion-Wrapper-Narrow {
+        padding-left: 0;
+        padding-right: 0;
+        max-width: none;
+        
+    }
+    .Rebellion-Section {
+        padding: 3em 0;
+    }
+    body {
+        display: block;
+    }
+}

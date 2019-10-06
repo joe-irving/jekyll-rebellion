@@ -58,13 +58,17 @@
     {% else %}
         {% if this_year != next_year %}
         </div>
+        {% comment %}
         <h2 id="{{ next_year }}-ref">{{next_year}}</h2>
         <h3 id="{{ next_year }}-{{ next_month }}-ref">{{ next_month }}</h3>
+        {% endcomment %}
         <div class="Rebellion-Blog-List">
         {% else %}    
             {% if this_month != next_month %}
             </div>
+            {% comment %}
             <h3 id="{{ this_year }}-{{ next_month }}-ref">{{ next_month }}</h3>
+            {% endcomment %}
             <div class="Rebellion-Blog-List">
             {% endif %}
         {% endif %}

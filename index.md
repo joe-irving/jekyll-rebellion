@@ -38,7 +38,6 @@ Or install it yourself as:
 
 TODO: Write usage instructions here.
 
- 
 ## _config.yml values
 
 | Property | Example Value |
