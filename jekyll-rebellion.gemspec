@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-rebellion"
-  spec.version       = "0.2.1"
+  spec.version       = "0.3.0"
   spec.authors       = ["David Gundry"]
   spec.email         = ["david@davidgundry.co.uk"]
 

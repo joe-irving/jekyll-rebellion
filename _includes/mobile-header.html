@@ -42,6 +42,9 @@
                         {%- endif -%}
                     {% endunless %}
                 {%- endfor -%}
+                {% for page in site.header_include_pages %}
+                    <a class="page-link" href="{{ page.url }}">{{ page.title | escape }}</a>
+                {% endfor %}
             </div>
             <div class="padding"></div>
             {% if site.donate %}
