@@ -14,12 +14,12 @@
             {% if page.jump %}
             <div class="Rebellion-Near-Bottom">
                 <div class="Rebellion-Flex-Line">
-                    <a href="#{{ page.jump.target }}"><span class="Rebellion-Button">{{ page.jump.text }}</span></a>
+                    <a href="#{{ page.jump.target | slugify }}"><span class="Rebellion-Button">{{ page.jump.text }}</span></a>
                 </div>
             </div>
             {% endif %}
         {% endif %}
-        
+
         {% if page.contents_links %}
             <div class="Rebellion-Section Rebellion-Contents">
                 <div class="Rebellion-Wrapper-Wide">
