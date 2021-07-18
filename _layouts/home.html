@@ -3,8 +3,15 @@ layout: default
 image_big: true
 ---
 
+{% for block in page.blocks %}
+  {% include block.html block=block %}
+{% endfor %}
+
+{% assign text = content | strip %}
+{% if text != '' %}
 <div class="Rebellion-Section">
     <div class="Rebellion-Wrapper-Wide">
         {{ content }}
     </div>
 </div>
+{% endif %}

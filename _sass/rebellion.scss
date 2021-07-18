@@ -33,12 +33,17 @@ $action-bar-height: 72px !default;
 $action-bar-height-mobile: 56px !default;
 $rounding: 5px;
 
+// Blocks
+$block-height: calc(max(min( 50vw, 70vh ), 400px);
+
 // Import partials.
 @import
   "rebellion/base",
   "rebellion/header",
   "rebellion/footer",
   "rebellion/content",
-  "rebellion/print"
+  "rebellion/print",
+  "rebellion/blocks",
+  "rebellion/form",
+  "custom"
 ;
-    

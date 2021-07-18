@@ -1,0 +1,62 @@
+.Rebellion-Block{
+  min-height: $block-height;
+  > .half{
+    min-height: $block-height;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .content{
+      padding: $spacing-unit;
+      max-width: $content-width-wide;
+      margin: 0 auto;
+
+    }
+    &.panel{
+      background: $accent-color no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      position: relative;
+      > div{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      .background{
+        background-color: $brand-color;
+      }
+      .heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1{
+          color: $accent-color;
+          font-size: calc(min(20vw,100px));
+        }
+      }
+    }
+  }
+  #Rebellion-Map{
+    height: $block-height;
+  }
+  &.half:nth-of-type(even){
+    flex-direction: row-reverse;
+  }
+
+}
+@media only screen and (min-width: $half-width * 2) {
+  .Rebellion-Block{
+    &.half{
+      display: flex;
+      > .half{
+        width: 50%;
+        min-height: $block-height;
+      }
+    }
+  }
+}
