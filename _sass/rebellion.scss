@@ -34,7 +34,7 @@ $action-bar-height-mobile: 56px !default;
 $rounding: 5px;
 
 // Blocks
-$block-height: calc(max(min( 50vw, 70vh ), 400px);
+$block-height: calc(max(min( 50vw, 60vh ), 400px));
 
 // Import partials.
 @import
