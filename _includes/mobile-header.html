@@ -1,10 +1,10 @@
 <div class="mobile">
     <div class="edgePadding"></div>
-    
+
     <div class="centralPadding"></div>
     <input type="checkbox" id="nav-trigger" class="nav-trigger" />
     {% if site.donate %}
-        <a class="Rebellion-Button" href="{{ site.donate }}">Donate</a>
+        <a class="Rebellion-Button" href="{{ site.donate  | relative_url }}">Donate</a>
     {% endif %}
     <label class="open-menu" for="nav-trigger" title="Open menu">
         <span class="menu-icon">
@@ -20,7 +20,7 @@
             </svg>
         </span>
     </label>
-    
+
     {% include site-title.html %}
     <div class="edgePadding"></div>
     <div class="mobile-drawer-container">
@@ -28,7 +28,7 @@
             <div class="mobile-nav">
                 {%- for path in page_paths  -%}
                     {%- assign my_page = site.pages | where: "path", path | first -%}
-                    
+
                     {% assign excluded_layout = false %}
                     {% for tag in site.main_nav_exclude_layouts %}
                         {% if tag == my_page.layout %}
@@ -43,12 +43,12 @@
                     {% endunless %}
                 {%- endfor -%}
                 {% for page in site.header_include_pages %}
-                    <a class="page-link" href="{{ page.url }}">{{ page.title | escape }}</a>
+                    <a class="page-link" href="{{ page.url | relative_url }}">{{ page.title | escape }}</a>
                 {% endfor %}
             </div>
             <div class="padding"></div>
             {% if site.donate %}
-                <a class="Rebellion-Button" href="{{ site.donate }}">Donate</a>
+                <a class="Rebellion-Button" href="{{ site.donate | relative_url }}">Donate</a>
             {% endif %}
             {% include social-links.html %}
         </div>

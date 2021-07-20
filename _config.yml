@@ -3,8 +3,8 @@ email: davidgundry@gmail.com
 description: >-
   Rebellion is an Extinction Rebellion theme for Jekyll. It uses bold blocks of colour
   while still being comfortable to read, for conveying an important message.
-baseurl: ""
-url: ""
+baseurl: "/jekyll-rebellion"
+url: "https://joe.irving.me.uk"
 
 # Build settings
 markdown: kramdown
@@ -26,7 +26,7 @@ permalink: /:title/
 facebook: \#
 twitter: \#
 instagram: \#
-# copyright_notice: Add an additional copyright notice here.
+copyright_notice: Add an additional copyright notice here. With **bold** and [link](https://example.com) formatting.
 donate: /donate/
 join_us: /join-us/
 # $xr-green, $xr-yellow, $xr-light-blue, $xr-pink, $xr-purple, $xr-dark-blue $xr-light-blue, xr-light-green, $xr-pastel-yellow

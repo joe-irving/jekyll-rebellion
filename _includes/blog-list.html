@@ -25,11 +25,11 @@
                 </div>
                 {% endif %}
                 <div class="description">
-                    <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                    <h4><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
                     {% if post.authors %}
                     <span>
                         {% for a in post.authors %}
-                            {% if a.url %}<a href='/{{ a.url }}'>{{ a.name }}</a>{% else %}{{a.name}}{% endif %}{% if forloop.last == false %},{% endif %}
+                            {% if a.url %}<a href='{{ "/" | join: a.url | relative_url  }}'>{{ a.name }}</a>{% else %}{{a.name}}{% endif %}{% if forloop.last == false %},{% endif %}
                         {% endfor %}
                     </span>
                     {%endif%}
@@ -41,13 +41,13 @@
                 </div>
             </div>
             {% if post.image %}
-            <a href="{{ post.url }}"><img src="{{ post.image }}" /></a>
+            <a href="{{ post.url | relative_url  }}"><img src="{{ post.image  | relative_url  }}" /></a>
             {% endif %}
             <div style="width: 100%">
             {% if post.categories.size > 0 %}
                 <span style="float: right;">Categories:
                 {% for c in post.categories %}
-                    <a href="/categories/{{ c }}">{{ c }}</a>{% if forloop.last == false %},{% endif %}
+                    <a href='{{ "/categories/" | join: c | relative_url }}'>{{ c }}</a>{% if forloop.last == false %},{% endif %}
                 {% endfor %}
                 </span>
             {% endif %}

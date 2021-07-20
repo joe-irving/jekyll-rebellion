@@ -13,6 +13,7 @@ button.Rebellion-Button{
   font-size: 1em;
 }
 input[type="submit"], button{
+  all: none;
   margin: $spacing-unit auto;
 }
 // Action network resets

@@ -1,7 +1,16 @@
-.Rebellion-Block{
-  min-height: $block-height;
-  > .half{
+@mixin block-height {
+  &:not(.full){
     min-height: $block-height;
+  }
+  &.full{
+    min-height: 100vh;
+  }
+}
+
+.Rebellion-Block:not(.text){
+  @include block-height;
+  > .half{
+    @include block-height;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,33 +20,35 @@
       margin: 0 auto;
 
     }
-    &.panel{
-      background: $accent-color no-repeat center center;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      position: relative;
-      > div{
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      .background{
-        background-color: $brand-color;
-      }
-      .heading {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        h1{
-          color: $accent-color;
-          font-size: calc(min(20vw,100px));
-        }
+  }
+  .panel{
+    @include block-height;
+
+    background: $accent-color no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    > div{
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .background{
+      background-color: $brand-color;
+    }
+    .heading {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h1{
+        color: $accent-color;
+        font-size: calc(min(20vw,100px));
       }
     }
   }
