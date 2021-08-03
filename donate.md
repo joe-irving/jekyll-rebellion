@@ -5,6 +5,10 @@ permalink: /donate/
 main_nav_exclude: true
 ---
 
+{% assign font_name = site.bold_font | default: "FucXed" %}
+{% assign font = site.data.fonts | where: "name", font_name | first %}
+
+
 # Donate
 
 Configure the `donate` value in your `_config.yml` file to point to either a internal or external page for soliciting donations for your group. Once this is set, the "donate" button will appear in the theme.

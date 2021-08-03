@@ -1,6 +1,6 @@
 {% assign type = include.block.type %}
 {% assign image = include.block.image %}
-{% assign heading = include.block.heading %}
+{% assign heading = include.block.heading | liquify %}
 {% assign block_data = site.data.blocks | where: "type", type | first  %}
 {% assign blocks = block_data | map: "type" %}
 {% assign text =  include.block.text | markdownify | liquify | strip %}
@@ -14,7 +14,7 @@
 {% capture buttons %}
 {% for button in include.block.buttons %}
   {% if forloop.first %}<div class="Rebellion-Flex-Line">{% endif %}
-    <a href="{{ button.target | relative_url }}"><span class="Rebellion-Button">{{button.text}}</span></a>
+    <a href="{{ button.target | liquify | relative_url }}"><span class="Rebellion-Button">{{button.text | liquify}}</span></a>
   {% if forloop.last  %}</div>{% endif %}
 {% endfor %}
 {% endcapture %}

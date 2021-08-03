@@ -3,6 +3,7 @@ email: davidgundry@gmail.com
 description: >-
   Rebellion is an Extinction Rebellion theme for Jekyll. It uses bold blocks of colour
   while still being comfortable to read, for conveying an important message.
+tagline: A theme for XR-affiliated groups
 baseurl: "/jekyll-rebellion"
 url: "https://joe.irving.me.uk"
 
@@ -32,6 +33,9 @@ join_us: /join-us/
 # $xr-green, $xr-yellow, $xr-light-blue, $xr-pink, $xr-purple, $xr-dark-blue $xr-light-blue, xr-light-green, $xr-pastel-yellow
 brand_color: $xr-pink
 accent_color: $xr-dark-blue
+# Stencilia-A, Stencilia-Bold, FucXed (default), ReggaeOne, SairaStencilOne, MajorMonoDisplay, Raleway, Raleway-Bold
+bold_font: Raleway-Bold
+font: Raleway
 invert_brand_text: false
 invert_accent_text: true
 theme_tiny: 250

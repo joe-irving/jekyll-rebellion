@@ -47,4 +47,37 @@ $on-small:         {{ site.theme_small | default: 425 }}px !default;
 $on-medium:        {{ site.theme_medium | default: 850 }}px !default;
 $on-large:         {{ site.theme_large | default: 1300 }}px !default;
 
+// Define defaults for each variable.
+
+// Fonts
+
+
+{% assign bold_font_name = site.bold_font | default: "FucXed" %}
+{% assign bold_font = site.data.fonts | where: "name", bold_font_name | first %}
+@font-face{
+    font-family:{{bold_font.name}};
+    font-style:normal;
+    font-weight:normal;
+    src: {% for source in bold_font.source %}url("{{ source.url }}") format("{{ source.format }}"){% unless forloop.last %},{% endunless %}{% endfor %};
+    font-display: swap
+}
+{% assign font_name = site.font | default: "FucXed" %}
+{% assign font = site.data.fonts | where: "name", font_name | first %}
+@font-face{
+    font-family:{{font.name}};
+    font-style:normal;
+    font-weight:normal;
+    src: {% for source in font.source %}url("{{ source.url }}") format("{{ source.format }}"){% unless forloop.last %},{% endunless %}{% endfor %};
+    font-display: swap
+}
+
+// Fonts
+$base-font-stack: "{{ font.name }}","Crimson Text", serif !default;
+$base-font-size:   16pt !default;
+$base-font-weight: 400 !default;
+$base-line-height: 1.5 !default;
+$header-font-stack: "{{bold_font.name}}","Helvetica Neue",Helvetica,Arial,sans-serif;
+$small-font-size:  $base-font-size * 0.875 !default;
+$smaller-font-size:  $base-font-size * 0.7 !default;
+
 @import "rebellion";
