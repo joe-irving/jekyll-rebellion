@@ -31,8 +31,8 @@ copyright_notice: Add an additional copyright notice here. With **bold** and [li
 donate: /donate/
 join_us: /join-us/
 # $xr-green, $xr-yellow, $xr-light-blue, $xr-pink, $xr-purple, $xr-dark-blue $xr-light-blue, xr-light-green, $xr-pastel-yellow
-brand_color: $xr-pink
-accent_color: $xr-dark-blue
+brand_color: rgb(224,135,62)
+accent_color: rgb(115,115,115)
 # Stencilia-A, Stencilia-Bold, FucXed (default), ReggaeOne, SairaStencilOne, MajorMonoDisplay, Raleway, Raleway-Bold
 bold_font: Raleway-Bold
 font: Raleway

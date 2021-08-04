@@ -36,7 +36,7 @@
         {% if page.top_quote %}
             <div class="Rebellion-Section Rebellion-PullQuote">
                 <div class="Rebellion-Wrapper-Wide">
-                    <h1>{{ page.top_quote }}</h1>
+                    <h1>{{ page.top_quote | liquify }}</h1>
                 </div>
             </div>
         {% endif %}
@@ -46,7 +46,7 @@
         {% if page.end_quote %}
         <div class="Rebellion-Section Rebellion-PullQuote">
             <div class="Rebellion-Wrapper-Wide">
-                <h1>{{ page.end_quote }}</h1>
+                <h1>{{ page.end_quote  | liquify }}</h1>
                 <div class="Rebellion-Flex-Line">
                     {% if site.join_us %}
                         <a href="{{ site.join_us  | relative_url}}"><span class="Rebellion-Button">Join Us</span></a>

@@ -8,8 +8,6 @@ top_quote: Rebellion is an Extinction Rebellion theme for Jekyll
 end_quote: Designed for XR-affiliated groups
 blocks:
 - type: text
-  text: ""
-- type: text
   text: "{% assign posts = site.posts  %}{% include blog-list.html %}"
   buttons:
     - text: GitHub
