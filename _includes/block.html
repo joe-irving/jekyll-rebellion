@@ -1,12 +1,12 @@
 {% assign type = include.block.type %}
 {% assign image = include.block.image %}
-{% assign heading = include.block.heading | liquify %}
+{% assign heading = include.block.heading | liquify | markdownify %}
 {% assign block_data = site.data.blocks | where: "type", type | first  %}
 {% assign blocks = block_data | map: "type" %}
 {% assign text =  include.block.text | markdownify | liquify | strip %}
 {% if text != '' and text %}
   {% assign half = true %}
-{% elsif include.block.buttons %}
+{% elsif include.block.buttons[0]['text'] %}
   {% assign half = true %}
 {% else %}
   {% assign half = false %}
@@ -36,6 +36,11 @@
           {% endif %}
         </div>
         {% if heading and heading != '' %}
+        <!-- <div class="Rebellion-Section Rebellion-PullQuote">
+            <div class="Rebellion-Wrapper-Wide">
+                <h1>{{ heading }}</h1>
+            </div>
+        </div> -->
           <div class="heading" id="{{ heading | url_encode | downcase }}">
             <h1>{{ heading }}</h1>
           </div>

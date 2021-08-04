@@ -24,7 +24,7 @@
   .panel{
     @include block-height;
 
-    background: $accent-color no-repeat center center;
+    background: $brand-color no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -46,9 +46,16 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      h1{
-        color: $accent-color;
-        font-size: calc(min(20vw,100px));
+      h1 {
+        color: $brand-text-color;
+        text-align: center;
+        margin: 1em 0;
+        font-size: $base-font-size * 2 ;
+        strong,b{
+          border-bottom-color: $brand-text-color-invert;
+          border-bottom-width: 1em;
+          color: $brand-text-color;
+        }
       }
     }
   }

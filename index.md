@@ -93,4 +93,5 @@ blocks:
 - type: image
   image: /assets/demo/bright-bulb-close-up-1108572.jpg
   full: true
+  buttons: []
 ---
