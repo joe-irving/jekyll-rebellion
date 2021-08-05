@@ -41,7 +41,7 @@
                 <h1>{{ heading }}</h1>
             </div>
         </div> -->
-          <div class="heading" id="{{ heading | url_encode | downcase }}">
+          <div class="heading" id="{{ include.block.heading | liquify| slugify | downcase }}">
             <h1>{{ heading }}</h1>
           </div>
         {% endif %}
