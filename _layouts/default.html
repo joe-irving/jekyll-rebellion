@@ -1,3 +1,8 @@
+{% capture blocks %}
+{% for block in page.blocks %}
+  {% include block.html block=block %}
+{% endfor %}
+{% endcapture %}
 <!DOCTYPE html>
 {% include head.html %}
 <body>
@@ -41,7 +46,11 @@
             </div>
         {% endif %}
 
+        {% unless page.blocks_after %}{{blocks}}{% endunless %}
+
         {{ content }}
+
+        {% if page.blocks_after %}{{blocks}}{% endif %}
 
         {% if page.end_quote %}
         <div class="Rebellion-Section Rebellion-PullQuote">

@@ -1,4 +1,39 @@
 ---
+fonts:
+- name: FucXed
+  source:
+    - url: ../fonts/fucxedcaps-v2-webfont.woff2
+      format: woff2
+    - url: ../fonts/fucxedcaps-v2-webfont.woff
+      format: woff
+- name: Stencilia-A
+  source:
+    - url: ../fonts/Stencilia-A.ttf
+      format: truetype
+- name: Stencilia-Bold
+  source:
+    - url: ../fonts/Stencilia-Bold.ttf
+      format: truetype
+- name: ReggaeOne
+  source:
+    - url: ../fonts/ReggaeOne-Regular.ttf
+      format: truetype
+- name: SairaStencilOne
+  source:
+    - url: ../fonts/SairaStencilOne-Regular.ttf
+      format: truetype
+- name: MajorMonoDisplay
+  source:
+    - url: ../fonts/MajorMonoDisplay-Regular.ttf
+      format: truetype
+- name: Raleway
+  source:
+    - url: ../fonts/Raleway-VariableFont_wght.ttf
+      format: truetype
+- name: Raleway-Bold
+  source:
+    - url: ../fonts/Raleway-ExtraBold.ttf
+      format: truetype
 ---
 
 
@@ -53,7 +88,7 @@ $on-large:         {{ site.theme_large | default: 1300 }}px !default;
 
 
 {% assign bold_font_name = site.bold_font | default: "FucXed" %}
-{% assign bold_font = site.data.fonts | where: "name", bold_font_name | first %}
+{% assign bold_font = page.fonts | where: "name", bold_font_name | first %}
 @font-face{
     font-family:{{bold_font.name}};
     font-style:normal;
@@ -62,7 +97,7 @@ $on-large:         {{ site.theme_large | default: 1300 }}px !default;
     font-display: swap
 }
 
-{% assign font = site.data.fonts | where: "name", site.font | first %}
+{% assign font = page.fonts | where: "name", site.font | first %}
 {% if font %}
 @font-face{
     font-family:{{font.name}};

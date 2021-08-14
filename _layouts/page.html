@@ -1,13 +1,6 @@
 ---
 layout: default
 ---
-{% capture blocks %}
-{% for block in page.blocks %}
-  {% include block.html block=block %}
-{% endfor %}
-{% endcapture %}
-
-{% unless page.blocks_after %}{{blocks}}{% endunless %}
 
 {% assign text = content | strip %}
 {% if text != '' %}
@@ -17,5 +10,3 @@ layout: default
     </div>
 </div>
 {% endif %}
-
-{% if page.blocks_after %}{{blocks}}{% endif %}

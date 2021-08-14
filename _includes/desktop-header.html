@@ -33,7 +33,7 @@
 
     {% if site.donate %}
         <div class="withinPadding"></div>
-        <a class="Rebellion-Button" href="{{ site.donate | relative_url}}">Donate</a>
+        <a class="Rebellion-Button" href="{{ site.donate | liquify | relative_url}}">Donate</a>
     {% endif %}
 
     <div class="edgePadding"></div>
