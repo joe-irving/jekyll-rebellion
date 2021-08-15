@@ -1,7 +1,11 @@
 <div class="Rebellion-Flex-Line">
   {% for demand in include.demands %}
     <div class="Rebellion-Demand">
-      {{ demand }}
+      <div class="Rebellion-Flex-Line"><h2>{{ demand.heading }}</h2></div>
+      <p>{{ demand.text }}</p>
+      {% if demand.button %}
+      <div class="Rebellion-Flex-Line"><a href="{{ demand.button.target | liquify | relative_url }}"><span class="Rebellion-Button">{{demand.button.text | liquify}}</span></a></div>
+      {% endif %}
     </div>
   {% endfor %}
 </div>

@@ -216,3 +216,32 @@
         }
     }
 }
+
+/* Tweet formatting */
+.tweet > p, .tweet > p *{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: normal;
+}
+.card.tweet {
+  background-color: #15202b;
+}
+.card.tweet:hover {
+  background-color: #15202b;
+  box-shadow: 0 0 10px 0 #15202b;
+}
+.tweet .at, .tweet .hashtag{
+  color: rgb(27, 149, 224);
+}
+/* Event box formatting */
+a.card:hover{
+  color: inherit;
+}
+section.card{
+  display: flex;
+  justify-content:space-between;
+  margin-top: 1vh;
+  padding-left: 1vw;
+  transition: 100ms;
+  border-radius: 7px;
+}
