@@ -10,6 +10,26 @@
             padding-top: $action-bar-height + 50;
         }
     }
+    .social-links {
+        a {
+            text-decoration: none;
+
+            svg {
+                transition: 0.2s;
+                fill: $brand-text-color;
+                height: 38px;
+
+                &:hover{ fill: $brand-color;
+                    path, .st0 {
+                        fill: $accent-color;
+                    }
+                }
+
+                path, .st0 { fill: invert($brand-text-color); }
+            }
+        }
+
+    }
 }
 
 .Rebellion-Wrapper-Wide{
