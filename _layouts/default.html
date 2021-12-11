@@ -10,13 +10,13 @@
 
     <main class="Rebellion-Main">
 
-        {% if page.top_image %}
+        {% if page.top_image.size > 0 %}
             {% if layout.image_big %}
                 <div class="Rebellion-Section Rebellion-Big-Picture" style="background-image:url('{{page.top_image | relative_url}}')"></div>
             {% else %}
                 <div class="Rebellion-Section Rebellion-Half-Picture" style="background-image:url('{{page.top_image | relative_url}}')"></div>
             {% endif %}
-            {% if page.jump %}
+            {% if page.jump.size > 0 %}
             <div class="Rebellion-Near-Bottom">
                 <div class="Rebellion-Flex-Line">
                     <a href="#{{ page.jump.target | slugify }}"><span class="Rebellion-Button">{{ page.jump.text }}</span></a>
@@ -25,7 +25,7 @@
             {% endif %}
         {% endif %}
 
-        {% if page.contents_links %}
+        {% if page.contents_links.size > 0 %}
             <div class="Rebellion-Section Rebellion-Contents">
                 <div class="Rebellion-Wrapper-Wide">
                     <h2>{{ page.title }}</h2>
@@ -38,7 +38,7 @@
             </div>
         {% endif %}
 
-        {% if page.top_quote %}
+        {% if page.top_quote.size > 0 %}
             <div class="Rebellion-Section Rebellion-PullQuote">
                 <div class="Rebellion-Wrapper-Wide">
                     <h1>{{ page.top_quote | liquify }}</h1>
@@ -52,15 +52,15 @@
 
         {% if page.blocks_after %}{{blocks}}{% endif %}
 
-        {% if page.end_quote %}
+        {% if page.end_quote.size > 0 %}
         <div class="Rebellion-Section Rebellion-PullQuote">
             <div class="Rebellion-Wrapper-Wide">
                 <h1>{{ page.end_quote  | liquify }}</h1>
                 <div class="Rebellion-Flex-Line">
-                    {% if site.join_us %}
+                    {% if site.join_us.size > 0 %}
                         <a href="{{ site.join_us  | relative_url}}"><span class="Rebellion-Button">Join Us</span></a>
                     {% endif %}
-                    {% if site.donate %}
+                    {% if site.donate.size > 0 %}
                         <a href="{{ site.donate  | relative_url}}"><span class="Rebellion-Button">Donate</span></a>
                     {% endif %}
                 </div>
